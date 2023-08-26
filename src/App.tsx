@@ -1,9 +1,14 @@
 import './App.css';
-import Keyboard from './components/Keyboard/Keyboard';
+import InputRow from './components/InputRow';
+import Keyboard from './components/Keyboard';
+import { INPUT_ROWS } from './constants';
 
 function App() {
   return (
     <>
+      {[...new Array(INPUT_ROWS)].map((_row, index) => (
+        <InputRow key={index} />
+      ))}
       <Keyboard />
     </>
   );
