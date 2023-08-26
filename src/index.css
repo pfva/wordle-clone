@@ -69,3 +69,10 @@ body {
   height: 3rem;
   border: 2px solid #555;
 }
+
+.input-letter {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  vertical-align: middle;
+}

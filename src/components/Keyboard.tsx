@@ -2,7 +2,12 @@ import { firstKeyboardRow, secondKeyboardRow, thirdKeyboardRowWithExtraKeys } fr
 import DeleteKey from './DeleteKey';
 import EnterKey from './EnterKey';
 
-const Keyboard = () => {
+interface KeyboardProps {
+  onClickLetter: (event: React.MouseEvent<HTMLButtonElement>, letter: string) => void;
+  onClickDelete: () => void;
+}
+
+const Keyboard = ({ onClickLetter, onClickDelete }: KeyboardProps) => {
   return (
     <div className='keyboard'>
       {[firstKeyboardRow, secondKeyboardRow, thirdKeyboardRowWithExtraKeys].map((row, index) => (
@@ -12,10 +17,10 @@ const Keyboard = () => {
               return <EnterKey key={index} />;
             }
             if (letter === 'Delete') {
-              return <DeleteKey key={index} />;
+              return <DeleteKey key={index} onClick={onClickDelete} />;
             }
             return (
-              <button key={index} className='keyboard-button'>
+              <button key={index} onClick={event => onClickLetter(event, letter)} className='keyboard-button'>
                 {letter}
               </button>
             );
