@@ -4,8 +4,8 @@ interface EnterKeyProps {
 
 const EnterKey = ({ onClick }: EnterKeyProps) => {
   return (
-    <button onClick={onClick} className='keyboard-extra-button'>
-      Enter
+    <button onClick={onClick} className='keyboard-button keyboard-extra-button'>
+      ENTER
     </button>
   );
 };

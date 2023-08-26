@@ -4,7 +4,7 @@ interface DeleteKeyProps {
 
 const DeleteKey = ({ onClick }: DeleteKeyProps) => {
   return (
-    <button onClick={onClick} className='keyboard-extra-button'>
+    <button onClick={onClick} className='keyboard-button keyboard-extra-button'>
       ←
     </button>
   );

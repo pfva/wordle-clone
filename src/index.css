@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Libre Franklin', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 500;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #121213;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -42,16 +42,19 @@ body {
   width: 3rem;
   height: 4rem;
   margin: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
+  background-color: #818384;
+  border: none;
+  border-radius: 0.2rem;
+  font-family: inherit;
+  font-weight: 600;
 }
 
 .keyboard-extra-button {
   width: 5rem;
   height: 4rem;
-  margin: 0.2rem;
-  font-size: 1.5rem;
-  cursor: pointer;
+  font-size: 0.8rem;
 }
 
 .input-row {
@@ -67,13 +70,13 @@ body {
 .input-box {
   width: 3rem;
   height: 3rem;
-  border: 2px solid #555;
+  border: 2px solid #3a3a3c;
 }
 
 .input-letter {
   margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
   line-height: 3rem;
   vertical-align: middle;
 }
