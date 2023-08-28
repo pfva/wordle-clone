@@ -9,13 +9,13 @@ export const evaluateGuess = (guess: string[], word: string): ColorMap => {
     if (word[index] === letter) {
       return {
         ...acc,
-        [index]: 'green',
+        [index]: '#538d4e',
       };
     }
     if (word.includes(letter) && word[index] !== letter) {
       return {
         ...acc,
-        [index]: 'gold',
+        [index]: '#b59f3b',
       };
     }
     return {
