@@ -15,7 +15,7 @@ const App = () => {
   const [activeRow, setActiveRow] = useState<number>(0);
 
   const handleLetterClick = (_event: React.MouseEvent<HTMLButtonElement>, letter: string) => {
-    if (currentRowGuesses.length >= 5) return;
+    if (currentRowGuesses.length >= 5 || !/^[A-Z]$/.test(letter)) return;
     const newGuesses = [...currentRowGuesses, letter];
     setCurrentRowGuesses(newGuesses);
   };
